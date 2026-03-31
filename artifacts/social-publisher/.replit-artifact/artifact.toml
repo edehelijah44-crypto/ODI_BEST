@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "ODI Social Publisher"
+version = "1.0.0"
+id = "artifacts/social-publisher"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19162
+
+[services.development]
+run = "pnpm --filter @workspace/social-publisher run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/social-publisher", "run", "build" ]
+publicDir = "artifacts/social-publisher/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19162"
+BASE_PATH = "/"

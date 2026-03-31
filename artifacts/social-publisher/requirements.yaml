@@ -1,0 +1,27 @@
+packages:
+  "framer-motion": "For page transitions and micro-interactions"
+  "recharts": "For analytics charts and data visualization"
+  "date-fns": "For formatting publish dates and schedules"
+  "clsx": "Utility for constructing className strings"
+  "tailwind-merge": "Utility for merging tailwind classes without conflicts"
+  "react-hook-form": "For form state management and validation"
+  "@hookform/resolvers": "Zod resolver for react-hook-form"
+  "zod": "Schema validation for forms"
+  "lucide-react": "Beautiful consistent icons"
+
+images:
+  - path: "artifacts/social-publisher/public/images/auth-bg.png"
+    description: "Abstract vibrant 3D gradient background in dark deep purple, neon pink, and cyan colors, modern, smooth, glassmorphism, glowing professional tech vibe"
+    aspect_ratio: "16:9"
+  - path: "artifacts/social-publisher/public/images/logo.png"
+    description: "Minimal modern abstract letter O and P logo for ODI Publisher, glowing neon purple on transparent dark background, clean, professional"
+    aspect_ratio: "1:1"
+  - path: "artifacts/social-publisher/public/images/avatar-placeholder.png"
+    description: "A cool minimal 3D abstract avatar, default user profile picture, smooth stylized lighting, purple and pink gradients"
+    aspect_ratio: "1:1"
+
+notes:
+  - API base URL is /api
+  - The generated API hooks are imported from @workspace/api-client-react
+  - Demo mode is implemented on the frontend to bypass missing/unauthorized backends by overriding queries with mock data
+  - Wouter is used for routing, Link components do not wrap <a> tags
