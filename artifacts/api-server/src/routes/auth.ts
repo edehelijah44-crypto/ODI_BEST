@@ -54,6 +54,7 @@ router.post("/register", async (req, res) => {
       return res.status(400).json({ error: "Password must be at least 8 characters." });
     }
 
+    
     // Check if email already exists
     const existing = await db.select({ id: usersTable.id })
       .from(usersTable)
