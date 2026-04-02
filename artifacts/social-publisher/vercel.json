@@ -1,6 +1,0 @@
-{
-  "buildCommand": "pnpm -r --filter @workspace/social-publisher run build",
-  "outputDirectory": "dist/public",
-  "framework": "vite",
-  "installCommand": "pnpm install"
-}

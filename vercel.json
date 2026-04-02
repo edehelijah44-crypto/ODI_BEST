@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd artifacts/social-publisher && pnpm run build",
+  "outputDirectory": "artifacts/social-publisher/dist/public",
+  "framework": "vite",
+  "installCommand": "pnpm install"
+}
